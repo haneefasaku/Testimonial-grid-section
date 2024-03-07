@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 0.8125rem;
+    height: 120vh;
+    background-color: #EDF2F8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* First column */
+
+.daniel {
+    grid-area: 1/1/2/3;
+    padding: 2rem;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-size: 150px;
+    background-position:right top;
+    background-repeat: no-repeat;
+    background-color: #733Fc8;
+    border-radius: 0.5rem;
+}
+
+.daniel h2 {
+    color: #d7cece;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.daniel p {
+    color: #a8abb0;
+    font-weight: 500;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+.dimg {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.dimg img {
+    width: 1.875rem;
+    border-radius: 50%;
+}
+
+
+.dimg span {
+    font-weight: 700;
+    color: #d7cece;
+}
+
+.dimg p {
+    color: #a8abb0;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+/* Second */
+
+.Jonathan {
+    grid-area: 1/3/2/4;
+    padding: 2rem;
+    background-color: #49556B;
+    border-radius: 0.5rem;
+}
+
+.Jonathan h2 {
+    color: #d7cece;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.Jonathan p {
+    color: #a8abb0;
+    font-weight: 500;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+.jimg {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.jimg img {
+    width: 1.875rem;
+    border-radius: 50%;
+}
+
+.jimg span {
+    font-weight: 700;
+    color: #d7cece;
+}
+
+.jimg p {
+    color: #a8abb0;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+/* Third */
+.kira {
+    grid-area: 1/4/3/5;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.kira h2 {
+    color: #625555;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.kira p {
+    color: #a8abb0;
+    font-weight: 500;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+.kimg {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.kimg img {
+    width: 1.875rem;
+    border-radius: 50%;
+}
+
+.kimg span {
+    font-weight: 700;
+    color: #625555;
+}
+
+.kimg p {
+    color: #a8abb0;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+/* Forth */
+
+.jean {
+    grid-area: 2/1/3/2;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.jean h2 {
+    color: #625555;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.jean p {
+    color: #a8abb0;
+    font-weight: 500;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+.jeimg {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.jeimg img {
+    width: 1.875rem;
+    border-radius: 50%;
+}
+
+.jeimg span {
+    font-weight: 700;
+    color: #625555;
+}
+
+.jeimg p {
+    color: #a8abb0;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+/* Fifth */
+
+.patick {
+    grid-area: 2/2/3/4;
+    background-color: #18202D;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.patick h2 {
+    color: #d7cece;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.patick p {
+    color: #a8abb0;
+    font-weight: 500;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+.pimg{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pimg img {
+    width: 1.875rem;
+    border-radius: 50%;
+}
+
+.pimg span {
+    font-weight: 700;
+    color: #d7cece;
+}
+
+.pimg p {
+    color: #a8abb0;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+
+/* Mobile */
+
+@media (max-width:375px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+    }
+}
+
+
+
